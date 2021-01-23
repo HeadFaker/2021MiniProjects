@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+section
+{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: calc(25% + 50px);
+    height: calc(50% + 50px);
+    background: repeating-linear-gradient(#111, #111 50%, #fff 50%, #fff);
+    background-size: 5px 5px;
+    filter: url(#noise);
+}
+
+section:hover
+{
+    position: absolute;
+    align-self: center; 
+    top: -5%;
+    left: -5%;
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+    background: repeating-linear-gradient(#111, #111 50%, #fff 50%, #fff);
+    background-size: 5px 5px;
+    filter: url(#noise);
+}
+
+svg
+{
+   width: 0;
+   height: 0; 
+}

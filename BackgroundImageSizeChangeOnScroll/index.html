@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌲Adventure Is Out There</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section>
+        <h2>Background Size Change on Scroll</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perferendis quae ipsum accusantium,
+            doloremque ipsam sint neque placeat accusamus quaerat eius maiores dicta iusto rem eos consequatur nam
+            voluptatum deserunt aliquid minus numquam temporibus ipsa. Laborum quos, repellat nemo veniam nam quis
+            suscipit, maxime architecto veritatis sapiente consequatur quam fugit quas non earum laboriosam beatae?
+            Illo impedit recusandae accusantium dolores sed ut voluptatum ducimus atque pariatur consequatur,
+            laborum assumenda obcaecati quae ea placeat quas alias ipsam earum incidunt sint soluta! Molestias nobis
+            necessitatibus maiores ducimus mollitia nesciunt ea deserunt nisi facilis rerum, repudiandae tenetur
+            blanditiis eos explicabo officiis accusantium doloribus porro dolore laboriosam est dolores id.
+            Recusandae quibusdam obcaecati neque magni tenetur quas placeat minus officia tempora vel, quis non
+            animi! Quam sunt ducimus provident temporibus nobis nam cupiditate eveniet architecto animi, accusamus
+            quos, quae facere, iure ut dolores quasi aliquam quas corporis rem eaque necessitatibus voluptates.
+            Delectus alias laudantium, minus assumenda ab recusandae deleniti fugiat, rem odit tempora dolor
+            neque.<br><br> Facere ullam sint consequatur nam possimus quisquam aliquid, aut quibusdam nobis fugit
+            dolorum est vero animi quod ab esse alias officia sapiente! Adipisci neque nemo itaque quod beatae
+            facere magni quae est a ducimus ea iusto ex sed earum in ratione quos facilis rerum odit tenetur, maxime
+            cupiditate. Blanditiis quaerat incidunt illum eius perspiciatis ab quae laborum possimus aspernatur ex?
+            Porro incidunt vitae ullam, quam iusto tempora est cumque voluptatum inventore! Obcaecati similique
+            consequuntur blanditiis nobis, mollitia ab odit dicta veritatis sequi quod, molestiae molestias
+            accusamus iure assumenda d.</p>
+    </section>
+    <script>
+        const bg = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            bg.style.backgroundSize = 160 - +window.pageYOffset / 12 + '%';
+            bg.style.opacity = 1 - +window.pageYOffset / 700 + '';
+        })
+    </script>
+</body>
+
+</html>
